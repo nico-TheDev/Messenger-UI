@@ -22,6 +22,8 @@ let app = document.querySelector('.app'); // gets the app class
 let pageOne = document.querySelector('.app > *'); // gets the pageOne items
 let pageOneActions = document.querySelector('.actions'); //gets the action bar
 
+let theText = document.querySelector('.app__text');
+let theInsertMessage;
 
 setInterval(getTime,1000); // refreshes clock
 
@@ -38,7 +40,7 @@ send.addEventListener('click',function(){
 
     else{
         //creates a clone of the app text element
-        let theInsertMessage = document.querySelector('.app__text').cloneNode(true);
+        theInsertMessage = theText.cloneNode(true);
         //changes the clonedelement's text property to the new text value
         let finalMessage = theInsertMessage.textContent = newMessageContent;
         //adds the element to the body to access the properties;
