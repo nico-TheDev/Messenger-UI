@@ -1,0 +1,376 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  background: #005AA7;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right bottom, from(#FFFDE4), to(#005AA7));
+  background: linear-gradient(to bottom right, #FFFDE4, #005AA7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.fas {
+  cursor: pointer;
+}
+
+.phone {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border: 1rem solid #1a1818;
+  border-radius: 2rem;
+  border-bottom: 3.3rem solid #1a1818;
+  position: relative;
+}
+
+.phone .buttons {
+  width: 10px;
+  height: 40px;
+  position: absolute;
+}
+
+.phone .button1 {
+  top: 80px;
+  right: -20px;
+  background-color: #1a1818;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.phone .button2 {
+  top: 130px;
+  height: 25px;
+  right: -20px;
+  background-color: #1a1818;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.phone .button3 {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  bottom: -44px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone .button3::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.screen > *:not(:last-child) {
+  border-bottom: 1px solid gray;
+}
+
+.status {
+  height: 15px;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.status > * {
+  margin: 0 0.1rem;
+}
+
+.status .fa-clock {
+  margin-left: auto;
+}
+
+.app {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.app > * {
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.app__head {
+  padding: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  z-index: 10;
+  color: blue;
+  -webkit-box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+}
+
+.app__head > * {
+  margin: 0 0.4rem;
+}
+
+.app__user {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.app__username {
+  margin-right: auto;
+  color: black;
+}
+
+.app__message {
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 359px;
+}
+
+.app__message .fa-check {
+  display: block;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin-left: auto;
+  background-color: gray;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  color: white;
+  border: 2px solid gray;
+}
+
+.app__text {
+  width: 70%;
+  border-radius: 1rem;
+  color: white;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  position: relative;
+  background-color: blue;
+}
+
+.app__text:first-child {
+  opacity: 0;
+}
+
+.app__whitespace {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.back {
+  cursor: pointer;
+}
+
+.actions {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: blue;
+  font-size: 1.2rem;
+  z-index: 4;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.actions > * {
+  margin: 0 0.3rem;
+}
+
+.actions__message {
+  width: 150px;
+  padding: 0.4rem;
+  font-family: inherit;
+  border-radius: 1rem;
+  border: none;
+  border: 1px solid gray;
+}
+
+.actions__send {
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  color: blue;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+
+.actions__send:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+}
+
+.new-screen {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  background-image: url(/day.jpg);
+  background-size: cover;
+  border-bottom-left-radius: 0;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  place-items: center;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.program {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 4rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  cursor: pointer;
+}
+
+.program__name {
+  font-size: 0.6rem;
+}
+
+.program:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */

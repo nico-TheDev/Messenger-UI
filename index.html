@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messagey</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="all.min.js"></script>
+</head>
+<body>
+    
+    <div class="phone">
+        <div class="screen">
+            <div class="status">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+
+                <i class="fas fa-clock"></i>
+                <i class="fas fa-battery-full"></i>
+                <span class="time">
+                    8:00
+                </span>
+            </div>
+
+            <div class="app">
+                <div class="app__head">
+                    <button class="back"><i class="fas fa-arrow-left"></i></button>
+                    <img src="user.jpg" alt="user" class="app__user">
+                    <span class="app__username">Jane Doe</span>
+                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-video"></i>
+                    <i class="fas fa-info"></i>
+                </div>
+
+                <div class="app__message">
+                    <p class="app__text">
+                    </p>
+                </div>
+
+                <div class="new-screen">
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-messenger"></use>
+                            </svg>
+                            <p class="program__name">Messenger</p>
+                    </div>
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-opera"></use>
+                            </svg>
+                            <p class="program__name">Opera</p>
+                    </div>
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-reddit"></use>
+                            </svg>
+                            <p class="program__name">Reddit</p>
+                    </div>
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-twitter"></use>
+                            </svg>
+                            <p class="program__name">Twitter</p>
+                    </div>
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-messenger"></use>
+                            </svg>
+                            <p class="program__name">Messenger</p>
+                    </div>
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-wattpad"></use>
+                            </svg>
+                            <p class="program__name">Wattpad</p>
+                    </div>
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-javascript"></use>
+                            </svg>
+                            <p class="program__name">Learn</p>
+                    </div>
+                    
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-html5"></use>
+                            </svg>
+                            <p class="program__name">Learn</p>
+                    </div>
+                    
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-css3"></use>
+                            </svg>
+                            <p class="program__name">Learn</p>
+                    </div>
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-github"></use>
+                            </svg>
+                            <p class="program__name">Github</p>
+                    </div>
+                    <div class="program" onclick="nextPage()">
+                            <svg class="icon program__icon">
+                                <use href="sprite.svg#icon-react"></use>
+                            </svg>
+                            <p class="program__name">Soon</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="actions">
+                <i class="fas fa-file"></i>
+                <i class="fas fa-camera"></i>
+                <i class="fas fa-microphone"></i>
+                <input type="text" class="actions__message" placeholder="Enter Message">
+                <button class="actions__send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+
+         
+        </div>
+
+        <div class="buttons button1"></div>
+        <div class="buttons button2"></div>
+        <div class="buttons button3"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
