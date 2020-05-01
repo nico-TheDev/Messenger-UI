@@ -248,6 +248,8 @@ button {
 
 .back {
   cursor: pointer;
+  color: blue;
+  background-color: transparent;
 }
 
 .actions {
