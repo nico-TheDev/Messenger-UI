@@ -187,7 +187,8 @@ button{
     }
 
     &__text{
-        width: 70%;
+        width: max-content;
+        max-width: 70%;
         border-radius: 1rem;
         color: white;
         padding: 0.5rem;
@@ -195,7 +196,8 @@ button{
         margin-left: auto;
         position: relative;
         background-color: blue;
-        &:first-child{
+        word-break: break-all;        
+       &:first-child{
             opacity: 0;
         }
     }

@@ -226,7 +226,10 @@ button {
 }
 
 .app__text {
-  width: 70%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 70%;
   border-radius: 1rem;
   color: white;
   padding: 0.5rem;
@@ -234,6 +237,7 @@ button {
   margin-left: auto;
   position: relative;
   background-color: blue;
+  word-break: break-all;
 }
 
 .app__text:first-child {
